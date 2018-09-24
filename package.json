@@ -1,0 +1,32 @@
+{
+  "name": "facelogin",
+  "version": "1.0.0",
+  "description": "logs in with face recognition",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "webpack",
+    "build-client-watch": "webpack -w",
+    "start": "nodemon server",
+    "seed": "node seed.js",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
+    "start-dev": "npm run build-client-watch & npm run start-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/polyfill": "^7.0.0-beta.55",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.2",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "node": "^10.10.0",
+    "nodemon": "^1.18.4",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

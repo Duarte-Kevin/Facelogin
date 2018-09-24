@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="/jQuery.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="/bundle.js" type="text/javascript" defer></script>
+  <title>FaceTrack</title><video autoplay></video>
+
+</head>
+
+<body>
+  <div id="screenshot">
+    <video class="videostream" autoplay></video>
+    <img id="screenshot-img" src="">
+    <canvas id="canvas" style="display:none;"></canvas>
+    <div id="logIndiv">
+      <div class="demo-card-square mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__actions mdl-card--border">
+            <h3 id="loading"></h3>
+          <div class="signupDiv">
+            <form class="signform">
+              Email: <input type="email" id="Lemail" name="Lemail">
+              Password: <input type="password" id="Lpassword" name="Lpassword">
+              <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit" id="loginB">Login</button>
+              <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="signupB">Signup</button>
+
+            </form>
+            <button class="capture-button">Login
+              with Cam</button>
+            <button class="screenshot-button">
+              Capture
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="signup" class="signupHide">
+      <div class="demo-card-square mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__actions mdl-card--border">
+          <div class="signupDiv">
+            <form class="signform">
+              Name: <input type="text" id="Sname" name="Sname">
+              Email: <input type="email" id="Semail" name="Semail">
+              Password: <input type="password" id="Spassword" name="Spassword">
+              <div class="hideB" id="submitBdiv">
+                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit" id="submitB"
+                  value="submit">Submit</button>
+              </div>
+            </form>
+            <button class="capture-buttonS">Sign Up with Cam</button>
+            <button class="screenshot-buttonS">
+              Capture
+            </button>
+          </div>
+          <div>Take five pictures at different angles and then submit </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

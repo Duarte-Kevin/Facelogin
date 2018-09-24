@@ -1,0 +1,44 @@
+#screenshot-img {
+  max-width: 500px;
+  position: absolute;
+  top: 51vh;
+  left: 45px;
+}
+.videostream {
+  max-width: 500px;
+  position: absolute;
+  left: 45px;
+}
+.formdiv {
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+.formdiv > input {
+  margin: 10px;
+}
+.signupHide {
+  display: none;
+}
+.signupDiv {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.signform {
+  display: flex;
+  flex-direction: column;
+}
+.hideB {
+  display: none;
+}
+.demo-card-square.mdl-card {
+  width: 400px;
+  height: 320px;
+  display: absolute;
+  left: 40vw;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #46b6ac;
+}
